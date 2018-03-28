@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="translator">Translator</string>
+    <string name="write_text">Write text ...</string>
+    <string name="yandex">Yandex</string>
+</resources>
