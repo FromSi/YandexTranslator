@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -12,7 +13,13 @@ import kz.imaytber.sgq.myapplication.R;
 import kz.imaytber.sgq.myapplication.mvp.present.MainPresent;
 import kz.imaytber.sgq.myapplication.mvp.present.MainPresentImpl;
 
-public class MainActivity extends AppCompatActivity implements MainView{
+public class MainActivity extends AppCompatActivity implements MainView {
+
+    @BindView(R.id.land1)
+    TextView land1;
+
+    @BindView(R.id.land2)
+    TextView land2;
 
     @BindView(R.id.textRead)
     EditText textRead;
@@ -31,12 +38,34 @@ public class MainActivity extends AppCompatActivity implements MainView{
     }
 
     @OnClick(R.id.button)
-    public void onClick(){
-        mainPresent.onClick(textWrite.getText().toString());
+    public void onTranslate() {
+        mainPresent.onTranslate(textWrite.getText().toString());
+    }
+
+    @OnClick(R.id.rotation)
+    public void onRotation(){
+        mainPresent.onRotation(land1.getText().toString(),
+                land2.getText().toString());
     }
 
     @Override
     public void setText(String text) {
         textRead.setText(text);
+    }
+
+    @Override
+    public void isError() {
+        textWrite.setError(getResources().getString(R.string.error));
+    }
+
+    @Override
+    public void setRotation(String land1, String land2) {
+        this.land1.setText(land1);
+        this.land2.setText(land2);
+    }
+
+    @Override
+    public String getLand() {
+        return land1.getText().toString();
     }
 }

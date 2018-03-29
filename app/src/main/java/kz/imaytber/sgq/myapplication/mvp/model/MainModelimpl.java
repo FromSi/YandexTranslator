@@ -10,6 +10,7 @@ public class MainModelimpl implements MainModel {
 
     private final String URL_YA = "https://translate.yandex.net";
     private final String KEY_YA = "trnsl.1.1.20170926T151123Z.95fb7d8f8a77ebdf.1ef1587b47531748bfa932fb3e5c787df5c6d8d8";
+    private final String[] land = {"EN", "RU"};
     private Retrofit retrofit;
 
     public MainModelimpl() {
@@ -23,6 +24,11 @@ public class MainModelimpl implements MainModel {
     @Override
     public String getKey() {
         return KEY_YA;
+    }
+
+    @Override
+    public String[] getLand() {
+        return land;
     }
 
     @Override

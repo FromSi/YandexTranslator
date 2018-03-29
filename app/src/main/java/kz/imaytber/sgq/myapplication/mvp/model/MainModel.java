@@ -4,5 +4,6 @@ import kz.imaytber.sgq.myapplication.api.ServiceApi;
 
 public interface MainModel {
     String getKey();
+    String[] getLand();
     ServiceApi getApi();
 }

@@ -3,4 +3,7 @@
     <string name="translator">Translator</string>
     <string name="write_text">Write text ...</string>
     <string name="yandex">Yandex</string>
+    <string name="error">Write the text!</string>
+    <string name="en">EN</string>
+    <string name="ru">RU</string>
 </resources>
