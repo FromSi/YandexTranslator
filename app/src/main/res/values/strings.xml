@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="translator">Translator</string>
-    <string name="write_text">Write text ...</string>
+    <string name="app_name">Yandex Translator</string>
+    <string name="translator">Translate</string>
+    <string name="write_text">Write text</string>
     <string name="yandex">Yandex</string>
-    <string name="error">Write the text!</string>
+    <string name="error">You did not enter anything!</string>
     <string name="en">EN</string>
     <string name="ru">RU</string>
 </resources>

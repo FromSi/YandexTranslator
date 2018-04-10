@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Яндэкс Перакладчык</string>
+    <string name="translator">Перавесці</string>
+    <string name="write_text">Увядзiце тэкст</string>
+    <string name="yandex">Яндэкс</string>
+    <string name="error">Вы нiчога не  ўвялі!</string>
+    <string name="en">EN</string>
+    <string name="ru">RU</string>
+</resources>

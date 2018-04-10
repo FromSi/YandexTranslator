@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Яндекс Переводчик</string>
+    <string name="translator">Перевести</string>
+    <string name="write_text">Введите текст</string>
+    <string name="yandex">Яндекс</string>
+    <string name="error">Вы ничего не ввели!</string>
+    <string name="en">EN</string>
+    <string name="ru">RU</string>
+</resources>
